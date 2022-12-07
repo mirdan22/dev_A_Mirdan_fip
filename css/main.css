@@ -4,7 +4,6 @@
 /*basic reset*/
 
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
-
 div,p,body,header,footer,section,article,nav, img { 
 	margin: 0; 
 	padding: 0; 
@@ -17,20 +16,17 @@ body {
 }
 
 /* Remove underlines from links */
-
 a {
 	text-decoration: none;
 }
 
 /*hide elements from browser but show for doc outline*/
-
 .hidden {
 	display: none;
 }
 
 
 /*Common page elements  */
-
 /*This is essentially a box that we place the whole site in.  
 We center the box using margin 0 auto and give it a fixed width of 1920px.
 1920px would fit a large monitor or tv. Sizes will vary depending on the projects
@@ -40,7 +36,6 @@ you work on and the intended audience */
 	margin: 0 auto;
 	width: 1920px;
 }
-
 /* this is our grid based off of our XD file */
 .grid-con {
 	display: grid;
@@ -53,15 +48,13 @@ you work on and the intended audience */
 #header-con {
 	height: 100px;
 	background-color: #fff;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-	
+	box-shadow: 0 2px 6px rgba(0,0,0,0.15);	
 }
 
 #logo {
 	grid-column: 1/2;
 	padding: 0;
-	margin-top: -50px;
-	
+	margin-top: -50px;	
 }
 
 #main-nav {
@@ -70,7 +63,7 @@ you work on and the intended audience */
 	margin-left: 0px;
 	margin-right: 60px;
 }
-
+/* footer contain social media, logo, sign up plus the header repeated for easy access */
 #main-nav ul, #footer-nav ul {
 	list-style-type: none;
 	padding: 0;
@@ -99,18 +92,18 @@ you work on and the intended audience */
 	
 }
 
-#sign-in-top {
+#sign-up-header {
 	grid-column: 12;
 	margin-top: 28px;
 	display: flex;
 }
 
-#sign-in-top i { 
+#sign-up-header i { 
 	margin-top: 15px;
 	color: #8FA5CA;
 }
 
-#sign-in-top h3 {
+#sign-up-header h3 {
 	grid-column: 11/-1;
 	font-size: 18px;
 	letter-spacing: 0.1px;
@@ -119,7 +112,7 @@ you work on and the intended audience */
 	margin-left: 8px;
 }
 
-#sign-in-top h3:hover { color: #8FA5CA; }
+#sign-up-header h3:hover { color: #8FA5CA; }
 
 #hero {
 	margin-top: 120px;
@@ -162,7 +155,7 @@ you work on and the intended audience */
 	margin-top: -212px;
 }
 
-.btn {
+.button {
 	background-color: #3D4365;
 	color: rgb(255, 255, 255);
 	margin-top: 140px;
@@ -176,8 +169,8 @@ you work on and the intended audience */
 	grid-column: 1/2;
 }
 
-.btn:hover { opacity: 0.8; }
-
+.button:hover { opacity: 0.8; }
+/* All cars boxes hold a photo and details about the car */
 #cars {
 	margin-top: 100px;
 	margin-bottom: 100px;
@@ -201,8 +194,11 @@ you work on and the intended audience */
 }
 
 .cars-box h3 {
-	font-size: 16px;
-	color: #8FA5CA;
+	font-size: 25px;
+	margin-top: 0;
+	margin-bottom: 14px;
+	color: #1e1e1e;
+	display: inline-block;
 }
 
 .cars-box h4 {
@@ -256,8 +252,11 @@ you work on and the intended audience */
 	margin-top: 22px;
 }
 
-#cars-ad a:hover { font-size: 26px; }
+#cars-ad a:hover {
+	font-size: 26px; 
+}
 
+/* <!-- About us section contain about the history and purpose of the website --> */
 #about-con {
 	background-color: #8fa5ca80 ;
 	padding-top: 15px;
@@ -284,6 +283,9 @@ you work on and the intended audience */
 	grid-column: 8/-1;
 }
 
+
+/* Contact section holds all contacts such as email, phone number,address and social media */
+
 #contact {
 	margin-top: 100px;
 	margin-bottom: 100px;
@@ -295,9 +297,16 @@ you work on and the intended audience */
 	margin-top: 50px;
 }
 
-#contact-text h3, #contact-form h3 { font-size: 24px; }
+#contact-text h3, #contact-form h3 {
+	 font-size: 24px;
+	text-align: left;
+	
+}
 
-#contact-text h3 { margin-top: 70px; }
+#contact-text h3 {
+	 margin-top: 70px;
+		
+}
 
 #contact-form h3 { margin-top: 60px; }
 
@@ -308,7 +317,7 @@ you work on and the intended audience */
 }
 
 #contact-text p:first-of-type { 
-		
+text-align: left;
 line-height: 60px; 
 font-size: 25px;
 font-family: Arial, Helvetica, sans-serif;
@@ -322,8 +331,10 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #contact-text ul {
-	padding: 0;
-	list-style: none;
+	padding-left: 10px;
+	text-align: left;
+	
+
 }
 
 #contact-text ul li {
@@ -348,7 +359,7 @@ font-family: Arial, Helvetica, sans-serif;
 	flex-direction: column;}
 
 #contact-form label { font-size: 18px; }
-
+/* contact box is to allow users to send a feedback or to ask a question */
 #contact-form input, #contact-form textarea { 
 	padding: 20px; 
 	margin-top: 15px; 
@@ -381,7 +392,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Common page elements  */
-
+/* footer contain social media, logo, sign up plus the header repeated for easy access */
 #footer-con {
 	background-color: #3D4365 ;
 	padding-top: 65px;
@@ -411,18 +422,18 @@ font-family: Arial, Helvetica, sans-serif;
 
 #footer-nav ul li a:hover { color: #8FA5CA; }
 
-#footer-newsletter {
+#footer-form {
 	grid-column: 1/6;
 }
 
-#footer-newsletter h3 {
+#footer-form h3 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 20px;
 	color: #fff;
 	margin-top: 80px;
 }
 
-#footer-newsletter input {
+#footer-form input {
 	padding-left: 20px;
 	font-size: 16px;
 	width: 380px;
@@ -430,7 +441,7 @@ font-family: Arial, Helvetica, sans-serif;
 	border-style: none;
 }
 
-.footer-btn-signup {
+.footer-button-signup {
 	position: absolute;
 
 	font-size: 18px;
@@ -445,7 +456,7 @@ font-family: Arial, Helvetica, sans-serif;
 	border-style: none;
 }
 
-.footer-btn-signup:hover {
+.footer-button-signup:hover {
 	background-color: #8FA5CA;
 	color: #fff;
 	cursor: pointer;
@@ -460,33 +471,34 @@ font-family: Arial, Helvetica, sans-serif;
 	margin-left: 650px;
 }
 
-#footer-social {
+#media-footer {
 	grid-column: 12;
 	margin-top: -160px;
 }
 
-#footer-social h3 { color: #fff; font-size: 18px;}
+#media-footer h3 { color: #fff; font-size: 18px;}
 
-#footer-social ul {
+#media-footer ul {
 	list-style: none;
 	padding: 0;
 }
 
-#footer-social ul li {
+#media-footer ul li {
 	display: inline;
 	margin: 10px;
 }
 
 
-#footer-social ul li a { 
+#media-footer ul li a { 
 	margin-left: -10px;
 	font-size: 30px;
 	color: #fff;
 }
 	
-#footer-social ul li a:hover { color: #8FA5CA; }
+#media-footer ul li a:hover { color: #8FA5CA; }
 
 /* gallery page */
+/* This page contain all cars for sale  */
 
 #gallery-hero-con {
 	background: url(../images/gallery/hero_img_cars.jpg);
@@ -520,13 +532,6 @@ font-family: Arial, Helvetica, sans-serif;
 #gallery-hero-banner span 
 { color: #5966b3;}
 
-.dot {
-	background-color: #fff;
-	height: 16px;
-	width: 16px;
-	border-radius: 50%;
-	margin: 16px;
-}
 
 #gallery-text {
 	font-size: 18px;
@@ -539,7 +544,7 @@ font-family: Arial, Helvetica, sans-serif;
 	margin-top: 80px;
 	margin-bottom: 45px;
 }
-
+/* All galary boxes hold a photo and details about the car */
 .gallery-box {
 	background-color: #fff;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -564,9 +569,10 @@ font-family: Arial, Helvetica, sans-serif;
 	display:block;
 }
 .gallery-box h3 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #c7d2e4;
+	font-size: 30px;
+	color: #1e1e1e;
+	margin-top: 0;
+	line-height: 40px;
 }
 
 .gallery-box h4 {
@@ -577,8 +583,8 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .gallery-box i { margin-right: 20px;}
-
-.more-btn {
+/* more botton/ more info about cars */
+.more-button {
 	background-color: #3d4365;
 	font-size: 19px;
 	font-weight: bolder;
@@ -590,7 +596,7 @@ font-family: Arial, Helvetica, sans-serif;
 	margin-left: 370px;
 }
 
-.more-btn:hover {
+.more-button:hover {
 	color: #fff;
 	background-color: #8fa5ca;
 	border-style: none;

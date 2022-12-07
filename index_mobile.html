@@ -10,7 +10,7 @@
 <body>
 	<div id="container">
         <header id="header-con">
-            <h2 class="hidden">Main Menu</h2>
+            <h1 class="hidden">Main Menu</h1>
             <div id="main-header" class="grid-con">
                 <a href="index.html"><img src="images/cars4sale_logo.svg" alt="Cars 4 Sell Logo"></a>
                 <div id="mobile-nav">
@@ -20,7 +20,7 @@
                 </div>
             </div>    
         </header> 
-
+<!-- Main text (homepage)  -->
         <main>
             <div id="hero-con">
                 <div class="grid-con">
@@ -32,14 +32,14 @@
                     </section>
                 </div>
             </div>
-
+<!--New Arrival contain new cars in stock for sale. cars boxes hold a photo and details about the car */ )  -->
             <section id="image-slider-con" class="cars-box">
                  <h2>New Arrivals</h2>
-                <a href="gallery_mobile.html"><img src="images/hm-m/toyota_hm.jpg" alt="toyota RAV4"></a>
+                <a href="gallery_mobile.html"><img src="images/mobile_home/toyota_hm.jpg" alt="toyota RAV4"></a>
                 <span id="mobile-slider-left"></span>
                 <span id="mobile-slider-right"></span>
               
-                <a href="gallery_mobile.html"><h4>Toyota RAV4</h4>
+                <a href="gallery_mobile.html"><h3>Toyota RAV4</h3>
                     <p>Price: $27,321
                         <br>Colour: Dark Grey
                         <br>Mileage: 30,233 miles /48,655km 
@@ -48,26 +48,27 @@
             </section>
 
             <section class="grid-con" id="cars-ad">
+                <h2 class="hidden">About</h2>   
             </section>
-            
+<!-- About us section contain about the history and purpose of the website -->
             <div id="about-us-con">
                 <h2>About Us</h2>   
-                <section id="about-us-text-con" class="grid-con">
-                    <div id="about-us-text">
+                <section id="about-text-con" class="grid-con">
+                    <div id="about-text">
                         <a href="about_mobile.html"><h3>About Our Website</h3></a>
                            <p> We started from a basic website in 2018. We decided to make a website to help people find the best cars that fit their budget. We started with about 50 cars for sale on our website and now we have more than 700 cars that fit everyone's budget. We are well known around Ontario with about 2.5 million visitors to our website from Ontario. </p>
                            <p class="main-text"> Our mission is to provide people a trusted and easy way to browse and find the best cars nearby their location. We do our best to keep the website working. Send us feedback about your experience browsing on our website. Your feedback is important to us!</p>
                     </div> 
                 </section>  
                 <div class="grid-con" id="about-us-photos">
-                    <img src="images/hm-m/toyota_brand.png" alt="Toyota Brand" class="about-us-photo">
-                    <img src="images/hm-m/mazda_brand.png" alt="Mazda Brand" class="about-us-photo">
-                    <img src="images/hm-m/hyundai_brand.png" alt="Hyundai Brand" class="about-us-photo">
-                    <img src="images/hm-m/vw_brand.png" alt="BMW Brand" class="about-us-photo">
+                    <img src="images/mobile_home/toyota_brand.png" alt="Toyota Brand" class="about-us-photo">
+                    <img src="images/mobile_home/mazda_brand.png" alt="Mazda Brand" class="about-us-photo">
+                    <img src="images/mobile_home/hyundai_brand.png" alt="Hyundai Brand" class="about-us-photo">
+                    <img src="images/mobile_home/vw_brand.png" alt="BMW Brand" class="about-us-photo">
                 </div>         
             </div>
-
-            <section class="grid-con" id="contact-us-con">
+     <!-- Contact section holds all contacts such as email, phone number,address and social media -->
+            <section class="grid-con" id="contact-con">
                 <h2>Contact</h2>
                 <section id="contact-text">
                     <h3>Contact Us</h3>
@@ -80,17 +81,16 @@
                         
                         <h3>Social Media</h3>
                         <ul>
-                            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></li>
                             <li><a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
                         </ul>
                 </section>
-    
+    <!-- contact box is to allow users to send a feedback or to ask a question -->
                 <section id="contact-form">
                     <h3>Your feedback is Important! </h3>
                     <form action="email.php" method="post">
-                        <input id="user-name" type="text" name="First name" placeholder="First Name" required>
-                        <input type="user-name" name="Last Name" placeholder="Last Name">
+                        <input name="user-name" type="text" placeholder="First Name" required>
+                        <input name="user-name" placeholder="Last Name">
                         <input type="email" name="Email Address" placeholder="Email Address" required>
                         <textarea name="msg" placeholder="Question / Comment" required></textarea>
                         <input type="submit" name="Send" value="SEND">
@@ -98,7 +98,7 @@
                 </section>
             </section> 
         </main>
-
+<!--  footer contain social media, logo, sign up plus the header repeated for easy access -->
         <section id="footer-con">
             <h2 class="hidden">Footer</h2>
             <div class="grid-con">
@@ -106,20 +106,19 @@
                     <a href="index_mobile.html"><img src="images/cars4sale_logo2_light.svg" alt="Cars 4 Sale Logo"></a>
             </div>
 
-            <section id="footer-newsletter">
+            <section id="footer-form">
                 <h3>Sign Up to be notified when we have new cars in stock!</h3>
                 <div>
                     <form action="newsletters.php" method="post">
                         <input type="email" name="email" placeholder="Email Adress:" required>
-                        <button class="footer-btn-signup">SIGN UP</button>
+                        <button class="footer-button-signup">SIGN UP</button>
                     </form>    
                 </div>
             </section>
 
-            <section id="footer-social">
+            <section id="media-footer">
                 <h3>Social Media</h3>
                     <ul class="social-media">
-                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></li>
                         <li><a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
                     </ul>

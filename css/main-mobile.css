@@ -10,11 +10,11 @@ div,p,body,header,footer,section,article,nav {
 	padding: 0; 
 }	
 
+
 img {
 	margin: 0; 
 	padding: 0; 
 }
-
 /*html selectors*/
 
 body {
@@ -22,7 +22,6 @@ body {
 	color: #000000;
 	font-size: 18px;
 }
-
 /* Remove underlines from links */
 
 a {
@@ -34,7 +33,6 @@ a {
 .hidden {
 	display: none;
 }
-
 
 /*Common page elements  */
 
@@ -64,11 +62,15 @@ you work on and the intended audience, we may go as low as 320px */
 	padding-bottom: 15px;
 }
 
-#header-logo { grid-column: 1; }
-
-#mobile-nav { grid-column: 4/-1; }
-
-#mobile-nav:hover { cursor:pointer; opacity: 0.8; }
+#mobile-nav { 
+	grid-column: 4/-1;
+ }
+#header-logo { 
+	grid-column: 1;
+ }
+#mobile-nav:hover 
+{ cursor:pointer; 
+	opacity: 0.8; }
 
 .burger {
 	grid-column: 4;
@@ -85,7 +87,7 @@ you work on and the intended audience, we may go as low as 320px */
 /* index page */
 
 #hero-con {
-background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
+	background: url(../images/mobile_home/hero_cars_hm.jpg) no-repeat;
 }
 
 #hero-text {
@@ -104,40 +106,43 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 #hero-text h2:hover { color: #1c1c1c; }
 
 #hero-text p:first-of-type {
-	font-size: 24px;
-	font-weight: bolder;
 	line-height: 30px;
+	font-weight: bolder;
+	font-size: 24px;
 }
 
 #hero-text p{
 	color: #3D4365;
-	font-size: 19px;
 	margin-top: 20px;
 	line-height: 24px;
+	font-size: 19px;
 }
 
 #image-slider-con {
-	height: 550px;
 	position: relative;
+	height: 550px;
 }
 
-#image-slider-con h2, #about-us-con h2, #contact-us-con h2 {
+#image-slider-con h2, #about-us-con h2, #contact-con h2 {
 	grid-column: 1/-1;
 	color: #1a1a1a;
-	text-align: center;
-	font-size: 36px;
 	font-family: Arial, Helvetica, sans-serif;
-	padding-top: 70px;
+	font-size: 36px;
 	padding-bottom: 30px;
+	padding-top: 70px;
 	margin: 0;
+	text-align: center;
+
 }
 
 #mobile-slider-left {
-	position: absolute;
-	left: 20px;
-	font-size: 30px;
-	color:#fff;
 	top: 300px;
+	left: 20px;
+	position: absolute;
+	color:#fff;
+	font-size: 30px;
+
+	
 }
 
 #mobile-slider-right {
@@ -147,12 +152,16 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	color:#fff;
 	top: 300px;
 }
-
-.cars-box h3, .cars-box h4, .cars-box p { text-align: center; }
+/* All cars boxes hold a photo and details about the car */
+.cars-box h3, .cars-box h4, .cars-box p {
+	 text-align: center; 
+}
 
 .cars-box h3 {
-	font-size: 16px;
-	color: #8FA5CA;
+	color: #1a1a1a;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .cars-box h4 {
@@ -162,7 +171,10 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	margin-bottom: 20px;
 }
 
-.cars-box h4:hover { color: #8FA5CA; text-decoration: underline;}
+.cars-box h4:hover {
+	 color: #8FA5CA; 
+	 text-decoration: underline;
+}
 
 .cars-box p {
 	font-family: Arial, Helvetica, sans-serif;
@@ -197,24 +209,26 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 }
 
 #cars-ad a:hover { font-size: 26px; }
-
-#about-us-text-con {
-	background-color: #ddede8;
+/* <!-- About us section contain about the history and purpose of the website --> */
+#about-text-con {
+	background-color: #8eaacc;
 	padding-top: 20px;
 	padding-bottom: 40px;
 }
 
-#about-us-text { grid-column: 1/-1; margin-left: 8px; margin-right: 8px; }
+#about-text { 
+	grid-column: 1/-1;
+	margin-left: 8px; 
+	margin-right: 8px}
 
-#about-us-text h3 {
+#about-text h3 {
 	font-size: 34px;
 	color: #1c1c1c;
-	
-	}
+}
 
-#about-us-text h3:hover { color: #8FA5CA; }
+#about-text h3:hover { color: #8FA5CA; }
 
-#about-us-text p {
+#about-text p {
 	color: #0b0b0b;
 	line-height: 20px;
 	margin-bottom: 20px;
@@ -225,19 +239,27 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	display: block;
 	margin: 40px auto 0 auto;
 }
-
-#contact-us-con {
+/* Contact section holds all contacts such as email, phone number,address and social media */
+#contact-con {
 	margin-bottom: 60px;
-	text-align: center;
+
 }
 
-#contact-text { grid-column: 1/-1; }
+#contact-text {
+	 grid-column: 1/-1; }
 
-#contact-text h3 { font-size: 24px; }
+#contact-text h3 {
+	 font-size: 24px;
+	text-align: left;
+	}
 
-#contact-text p:first-of-type { line-height: 30px;}
+#contact-text p:first-of-type { 
+	line-height: 30px;
+}
 
-#contact-text p { font-size: 18px; line-height: 40px;}
+
+#contact-text p {
+	 font-size: 18px; line-height: 40px;}
 
 #contact-text hr {
 	margin: 30px;
@@ -260,11 +282,12 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	color: #1c1c1c;
 }
 
-#contact-text ul li a:hover { color:  #3D4365; }
+#contact-text ul li a:hover {
+	 color:  #3D4365;
+ }
 
 #contact-form {
 	grid-column: 1/-1;
-	text-align: left;
 	display: flex;
 	flex-direction: column;
 }
@@ -274,10 +297,15 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	flex-direction: column;
 }
 
-#contact-form h3 { margin-top: 30px; }
+#contact-form h3 {
+	 margin-top: 30px; 
+	
+}
 
-#contact-form label { font-size: 18px; margin-left: 4px; }
-
+#contact-form label {
+	 font-size: 18px; margin-left: 4px;
+ }
+/* contact box is to allow users to send a feedback or to ask a question */
 #contact-form input, #contact-form textarea { 
 	padding: 25px 25px 25px 18px; 
 	margin-top: 10px; 
@@ -313,7 +341,7 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 }
 
 /*Common page elements  */
-
+/* footer contain social media, logo, sign up plus the header repeated for easy access */
 #footer-con {
 	background-color: #3D4365;
 }
@@ -324,19 +352,19 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	padding-left: 6px;
 }
 
-#footer-newsletter {
+#footer-form {
 	grid-column: 1/-1;
 	margin-left: 6px;
 	margin-top: 10px;
 }
 
-#footer-newsletter h3 {
+#footer-form h3 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	color: #fff;
 }
 
-#footer-newsletter input {
+#footer-form input {
 	padding-left: 20px;
 	font-size: 16px;
 	width: 200px;
@@ -344,7 +372,7 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	border-style: none;
 }
 
-.footer-btn-signup {
+.footer-button-signup {
 	position: absolute;
 
 	font-size: 18px;
@@ -359,36 +387,40 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	border-style: none;
 }
 
-.footer-btn-signup:hover {
+.footer-button-signup:hover {
 	background-color: #8FA5CA;
 	color: #fff;
 	cursor: pointer;
 }
 
-#footer-social {
+#media-footer {
 	grid-column: 1/-1;
 	margin-top: 20px;
 	margin-left: 6px;
 }
 
-#footer-social h3 { color: #fff; font-size: 18px;}
+#media-footer h3 { 
+	color: #fff; font-size: 18px;
+}
 
-#footer-social ul {
+#media-footer ul {
 	list-style: none;
 	padding: 0;
 }
 
-#footer-social ul li {
+#media-footer ul li {
 	display: inline;
 	margin: 10px;
 }
 
-#footer-social ul li a { 
+#media-footer ul li a { 
 	margin-left: -10px;
 	font-size: 30px; color: #fff;
 }
 	
-#footer-social ul li a:hover { color: #8FA5CA; }
+#media-footer ul li a:hover { 
+	color: #8FA5CA;
+ }
 
 #footer-con p {
 	grid-column: 1/-1;
@@ -400,9 +432,9 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 }
 
 /* gallery page */
-
+/* This page contain all cars for sale  */
 #hero-gallery-con {
-	background: url("../images/gallery-m/cars_hero_m.jpg");
+	background: url("../images/mobile_gallery/cars_hero_m.jpg") no-repeat; 
 	height: 458px;
 }
 
@@ -422,20 +454,14 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	line-height: 43px;
 }
 
-#hero-gallery-text span { color:  #5966b3; }
+#hero-gallery-text span { 
+	color:  #5966b3; 
+}
 
 #hero-gallery-text p {
 	line-height: 22px;
 }
 
-
-.dot {
-	background-color: #fff;
-	height: 16px;
-	width: 16px;
-	border-radius: 50%;
-	margin: 16px;
-}
 
 #gallery h2 {
 	text-align: center;
@@ -450,15 +476,18 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 #gallery img {
 	margin-left: -20px;
 }
-
+/* All galary boxes hold a photo and details about the car */
 .gallery-box {
 	grid-column: 1/-1;
 	margin-bottom: 20px;
 }
 
 .gallery-box h3 {
-	font-size: 18px;
-	color: #151515;
+	font-size: 30px;
+	color: #1c1c1c;
+	line-height: 40px;
+	margin-top: 0;
+	margin-bottom: 0px;
 }
 
 .gallery-box h4 {
@@ -469,11 +498,15 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	margin-bottom: 0px;
 }
 
-.gallery-box h4:hover { text-decoration: underline 4px #8fa5ca; }
+.gallery-box h4:hover {
+	 text-decoration: underline 4px #8fa5ca; 
+}
 
-.gallery-box i { margin-right: 20px;}
-
-.more-btn,.more-btn-2 {
+.gallery-box i {
+	 margin-right: 20px;
+}
+/* more botton/ more info about cars */
+.more-button,.more-button-2 {
 	font-size: 18px;
 	font-weight: bolder;
 	letter-spacing: 0.5px;
@@ -481,21 +514,24 @@ background: url("../images/hm-m/hero_cars_hm.jpg") no-repeat;
 	padding: 13px 34px;
 
 	border: #ffffff 1.5px solid;
-	border-radius: 50px;
+	border-radius: 8px;
 
 	margin-left: 228px;
 
 	display: flex;
 }
 
-.more-btn { 
+.more-button { 
 	margin-top: 30px;
 	background-color: #3d4365;
 	
 }
 
-.more-btn:hover, .more-btn-2:hover {
+.more-button:hover, .more-button-2:hover {
 	color: #fff;
 	background-color:#8FA5CA;
 	border-style: none;
+
 }
+
+
